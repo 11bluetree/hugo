@@ -1,0 +1,15 @@
+baseURL = '/'
+languageCode = 'ja-jp'
+title = 'Bluetree'
+theme = "hugo-theme-learn"
+relativeURLs = true # 相対パス
+uglyurls = true # ファイル名.htmlに変更
+pluralizeListTitles = false # セクションの複数形を防ぐ
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+    # Change default color scheme with a variant one. Can be "red", "blue", "green".
+    themeVariant = "blue"
+    aoki = "あおきはる" ## {{% siteparam "aoki" %}} →　あおきはる が出力される

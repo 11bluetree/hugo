@@ -1,0 +1,43 @@
+[
+{
+	"uri": "/%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB.htmlindex.html",
+	"title": "はじめに",
+	"tags": [],
+	"description": "",
+	"content": "   この手順書はOracle WebLogic Kubernetes Operatorを使用してKubernetesクラスタにWebLogic Serverドメインを作成する手順と、\nOperatorの機能を理解することを目的とする\n  Operator v3.0からドメインタイプとしてModel-in-imageが追加されたModel-in-imageでは、ドメイン構成はモデルファイルで定義するため環境間での移行が容易であり、\nドメインの作成および更新時にドメイン構成に動的な変更が可能となる\n  本資料は、以下のOracleドキュメントのチュートリアルに沿って作成されたものである\nhttps://oracle.github.io/weblogic-kubernetes-operator/\n  この手順書に沿って作業をするにあたって以下の事項を前提とする\n Docker/Podman、Kubernetes、Helm を理解し操作できること OKE（Oracle Container Engine for Kubernetes）クラスタを利用できること    以上\n"
+},
+{
+	"uri": "/%E6%89%8B%E9%A0%86%E6%9B%B8/1%E7%AB%A0.htmlindex.html",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "2 章  ここでは、kubernetesクラスタを操作するための準備手順を示す\nkubernetesクラスタへアクセスするクライアントに、以下をインストールする\n本手順書はOracle Linux 8で作業を進めている\ndnf  dnfパッケージをアップデートする  $ sudo dnf update -y Podman  Podmanをインストールする  $ sudo dnf install -y podman  バージョン確認する  $ podman version Version: 3.3.1 API Version: 3.3.1 Go Version: go1.16.7 Built: Wed Nov 10 15:32:15 2021 OS/Arch: linux/amd64 $ helm upgrade \\  --reuse-values \\  --set image=ghcr.io/oracle/weblogic-kubernetes-operator:3.3.7 \\  --namespace weblogic-operator-namespace \\  --wait \\  weblogic-operator \\  kubernetes/charts/weblogic-operator "
+},
+{
+	"uri": "/index.html",
+	"title": "WebLogic Kubernetes Operatorを使用したWebLogicドメイン作成手順書",
+	"tags": [],
+	"description": "",
+	"content": "WebLogic Kubernetes Operatorを使用したWebLogicドメイン作成手順書 2.2版\nNEC AIプラットフォームサービス事業部 SDPグループ\n2022/2/2\n"
+},
+{
+	"uri": "/%E6%89%8B%E9%A0%86%E6%9B%B8.htmlindex.html",
+	"title": "手順書 目次",
+	"tags": [],
+	"description": "",
+	"content": "1章 クラスタ作成 2章 Podman Kubernetesの設定 3章 4章 "
+},
+{
+	"uri": "/categories.htmlindex.html",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags.htmlindex.html",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

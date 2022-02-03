@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WebLogic Kubernetes Operatorを使用したWebLogicドメイン作成手順書 on WebLogicドメイン作成手順書</title>
+    <link>/</link>
+    <description>Recent content in WebLogic Kubernetes Operatorを使用したWebLogicドメイン作成手順書 on WebLogicドメイン作成手順書</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 02 Feb 2022 16:32:09 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E6%89%8B%E9%A0%86%E6%9B%B8/1%E7%AB%A0.html</link>
+      <pubDate>Wed, 02 Feb 2022 16:44:24 +0900</pubDate>
+      
+      <guid>/%E6%89%8B%E9%A0%86%E6%9B%B8/1%E7%AB%A0.html</guid>
+      <description>2 章  ここでは、kubernetesクラスタを操作するための準備手順を示す
+kubernetesクラスタへアクセスするクライアントに、以下をインストールする
+本手順書はOracle Linux 8で作業を進めている
+dnf  dnfパッケージをアップデートする  $ sudo dnf update -y Podman  Podmanをインストールする  $ sudo dnf install -y podman  バージョン確認する  $ podman version Version: 3.3.1 API Version: 3.3.1 Go Version: go1.16.7 Built: Wed Nov 10 15:32:15 2021 OS/Arch: linux/amd64 $ helm upgrade \  --reuse-values \  --set image=ghcr.io/oracle/weblogic-kubernetes-operator:3.3.7 \  --namespace weblogic-operator-namespace \  --wait \  weblogic-operator \  kubernetes/charts/weblogic-operator </description>
+    </item>
+    
+  </channel>
+</rss>
