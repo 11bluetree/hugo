@@ -13,3 +13,5 @@ home = [ "HTML", "RSS", "JSON"]
     # Change default color scheme with a variant one. Can be "red", "blue", "green".
     themeVariant = "blue"
     aoki = "あおきはる" ## {{% siteparam "aoki" %}} →　あおきはる が出力される
+
+custom_css =  ["css/custom-font.css"] # カスタムCSSの適用
